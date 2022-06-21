@@ -15,7 +15,7 @@
 <body>
     <main>
         <section class="robotron">
-            <!--<img id="robotron" class="robo" src="img/robotron.png" alt="Robotron">-->
+            <img class="robo" src="/img/azul/robotron.png" alt="Robotron">
             <figcaption class="titulo">ROBOTRON <br>2000</figcaption>
         </section>
 
@@ -44,8 +44,18 @@
                     <p class="estatistica-numero" data-estatistica="velocidade">0</p>
                 </div>
             </div>
+            <div class="cor">
+                <p class="cor-titulo">Escolha a cor do Robotron:</p>
+                <div>
+                    <button class="botao-cor" data-cor="branco" onclick="trocaImagem('branco')">Branco</button>
+                    <button class="botao-cor" data-cor="preto" onclick="trocaImagem('preto')">Preto</button>
+                    <button class="botao-cor" data-cor="azul" onclick="trocaImagem('azul')">Azul</button>
+                    <button class="botao-cor" data-cor="vermelho" onclick="trocaImagem('vermelho')">Vermelho</button>
+                    <button class="botao-cor" data-cor="rosa" onclick="trocaImagem('rosa')">Rosa</button>
+                    <button class="botao-cor" data-cor="amarelo" onclick="trocaImagem('amarelo')">Amarelo</button>
+                </div>
+            </div>
         </section>
-
         <section class="equipamentos">
             <form action="" class="montador">
                 <div class="box montador-conteudo">

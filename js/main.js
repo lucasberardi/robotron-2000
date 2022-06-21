@@ -1,5 +1,6 @@
 const controle = document.querySelectorAll("[data-controle]")
 const estatisticas = document.querySelectorAll("[data-estatistica]")
+
 const pecas = {
     "bracos": {
         "forca": 29,
@@ -41,10 +42,10 @@ controle.forEach( (elemento) => {
     })
 })
 
-function manipulaDados (oprecao, controle) {
+function manipulaDados (operacao, controle) {
     const peca = controle.querySelector('[data-contador]')
 
-    if(oprecao === "-"){
+    if(operacao === "-"){
         peca.value --
     }else {
         peca.value ++
@@ -61,3 +62,7 @@ function atualizaEstatisticas(operacao, peca) {
         }
     })
 }
+
+function trocaImagem(cor){
+    document.querySelector(".robo").src="img/" + cor + "/robotron.png";
+ }
